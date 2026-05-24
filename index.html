@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Dancing+Script:wght@700&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+</head>
+<body>
+      <div class="container">
+        <nav>
+            <div class="logo">
+                <h1>Developer<span>X</span></h1>
+            </div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#work">My Work</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+
+            </ul>
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </nav>
+
+        <div class="main">
+            <div class="mainText">
+                <h3>Hello I am</h3>
+                <h1>waheed <span>Lone</span></h1>
+                <p>FullStack Developer</p>
+                <button id="cvBtn">Downlode CV</button>
+            </div>
+            <img src="main1.jpg" alt="">
+        </div>
+
+        <div class="aboutus" id="about">
+            <div class="head">
+                <h1>About <span>Us</span></h1>
+            </div>
+            <div class="about">
+                <img src="main1.jpg" alt="">
+                <div class="aboutText">
+                    <h2>Hello I am FullStack <span>Developer</span></h2>
+                    <p>Experience :<span>1+ Year</span> </p>
+
+                    <p>Speciality :<span>Android,Ios,Web Applications Development</span> </p>
+                    <p>Skills :<span>C, C++, Java, Python,.NET,PHP,SQL,JavaScript,React,Flutter,Kotlin,QA Testing</span> </p>
+                    <p>Email :<span>waheedlone782@gmail.com</span> </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="services" id="service">
+            <div class="head">
+                <h1>My <span>Services</span></h1>
+            </div>
+            <div class="service">
+                <div class="card">
+    <i class="fa-solid fa-code"></i>
+    <h3>Website Development</h3>
+    <p>
+        I create modern, responsive, and user-friendly websites using the latest technologies. 
+        My focus is on performance, clean design, and delivering high-quality web solutions.
+    </p>
+</div>
+                <div class="card">
+    <i class="fa-solid fa-code"></i>
+    <h3>App Development</h3>
+    <p>
+        I develop modern, high-performance mobile applications with intuitive user interfaces, 
+        ensuring smooth functionality and a great user experience.
+    </p>
+</div>
+                <div class="card">
+    <i class="fa-solid fa-code"></i>
+    <h3>Website Design</h3>
+    <p>
+        I design visually appealing and user-friendly 
+        websites that provide an excellent user experience.
+    </p>
+</div>
+            </div>
+        </div>
+
+        <div class="works" id="work">
+            <div class="head">
+                <h1>My <span>Works</span></h1>
+            </div>
+            <div class="carousel-container">
+                <div class="myWork" id="carouselTrack">
+                    <div class="workCard">
+                        <img src="image.png" alt="">
+                        <p>Responsive Groceries Website</p>
+                        <a href="https://www.zipplynow.com" target="_blank">checkout</a>
+                    </div>
+                    <div class="workCard">
+                        <img src="image2.png" alt="">
+                        <p>ERP System Software</p>
+                        <a href="https://www.hrcemtac.in" target="_blank">checkout</a>
+                    </div>
+                    <div class="workCard">
+                        <img src="image3.png" alt="">
+                        <p>Service Website</p>
+                        <a href="https://www.daneenamajaz.com" target="_blank">checkout</a>
+                    </div>
+                    <div class="workCard">
+                        <img src="Aura.jpg" alt="">
+                        <p>Aura Mobile App</p>
+                        <a href="#" target="_blank">checkout</a>
+                    </div>
+                    <div class="workCard">
+                        <img src="cemtac.jpg" alt="">
+                        <p>Cemtac Application</p>
+                        <a href="#" target="_blank">checkout</a>
+                    </div>
+                    <div class="workCard">
+                        <img src="Tailor pro.jpg" alt="">
+                        <p>Tailor Pro App</p>
+                        <a href="#" target="_blank">checkout</a>
+                    </div>
+                    <div class="workCard">
+                        <img src="zipplynowimage.png" alt="">
+                        <p>Zipply Now Grocery App</p>
+                        <a href="https://www.zipplynow.com" target="_blank">checkout</a>
+                    </div>
+                </div>
+                <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
+                <button class="carousel-btn next" id="nextBtn">&#10095;</button>
+            </div>
+            <div class="carousel-dots" id="dotsContainer"></div>
+        </div>
+
+        <div class="connect" id="contact">
+            <div class="head">
+                <h1>Contact <span>Us</span></h1>
+            </div>
+            <div class="contact">
+                <p>Email :</p>
+                <input type="text" placeholder="Enter Email" id="email">
+                <p>Password :</p>
+                <input type="password" placeholder="Enter Password" id="pass">
+                <p>Message :</p>
+                <input type="text" placeholder="Enter Message" id="msg">
+                <button id="submit">Submit</button>
+            </div>
+        </div>
+
+        <!-- <div class="footer">
+            <div class="text">
+                <h3>Connect Here</h3>
+                <p>YouTube</p>
+                <p>Twitter</p>
+                <p>Instagram</p>
+                <p>Facebook</p>
+
+            </div> -->
+        
+            <div class="text">
+                <h3>Contact</h3>
+                <p>Email</p>
+                <p>waheedlone782@gmail.com</p>
+                <p>Message</p>
+                <p>Phone</p>
+                <p>+917889798897 / +917889810711</p>
+
+            </div>
+        </div>
+      </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

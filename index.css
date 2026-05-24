@@ -1,0 +1,538 @@
+ * {
+    margin: 0%;
+    padding: 0%;
+ }
+
+ body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(17, 16, 16);
+    color: white;
+ }
+ nav{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 22px;
+   background-color: rgba(17, 16, 16, 0.95);
+   backdrop-filter: blur(10px);
+   position: fixed;
+   top: 0%;
+   width: 100%;
+   z-index: 1000;
+   box-shadow: 0 4px 30px rgba(0, 128, 255, 0.1);
+   border-bottom: 1px solid rgba(0, 128, 255, 0.2);
+ }
+
+ ul{
+   display: flex;
+   align-items: center;
+ }
+ ul li{
+   list-style: none;
+ }
+ ul li a{
+   text-decoration: none;
+   color: white;
+   font-size: 19px;
+   margin-inline: 22px;
+   transition: all 0.3s ease;
+   padding-bottom: 8px;
+   position: relative;
+ }
+ ul li a:hover{
+   color: rgb(0, 140, 255);
+   border-bottom: 2px solid rgb(0, 140, 255);
+   transform: translateY(-2px);
+ }
+ #bar{
+   display: none;
+ }
+ .logo{
+   font-size: 22px;
+   font-weight: 900;
+   letter-spacing: 1px;
+ }
+ .logo span{
+   color: rgb(0, 153, 255);
+   background: linear-gradient(135deg, rgb(0, 153, 255), rgb(0, 200, 255));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+ }
+ .main{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 105px;
+   gap: 40px;
+   padding: 40px 20px;
+   flex-wrap: wrap;
+ }
+ .main img{
+   width: 350px;
+   height: 400px;
+   object-fit: cover;
+   border-radius: 15px;
+   border: 3px solid rgb(0, 128, 255);
+   box-shadow: 0 15px 40px rgba(0, 128, 255, 0.3);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+ .main img:hover{
+   transform: scale(1.05);
+   box-shadow: 0 20px 50px rgba(0, 128, 255, 0.5);
+ }
+ .mainText{
+   max-width: 500px;
+ }
+ .mainText h1{
+   font-size: 70px;
+   font-weight: 900;
+   letter-spacing: -1px;
+   margin-bottom: 10px;
+ }
+ .mainText h1 span{
+   color: rgb(0, 153, 255);
+   background: linear-gradient(135deg, rgb(0, 153, 255), rgb(0, 200, 255));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+ }
+ .mainText h3{
+   font-size: 28px;
+   font-weight: 300;
+   letter-spacing: 1px;
+   color: rgba(255, 255, 255, 0.8);
+ }
+ .mainText p{
+   font-size: 30px;
+   font-weight: 600;
+   color: rgba(255, 255, 255, 0.9);
+   margin: 15px 0;
+ }
+ .mainText button{
+   width: 140px;
+   height: 40px;
+   background: linear-gradient(135deg, rgb(0, 157, 255), rgb(0, 200, 255));
+   font-size: 19px;
+   border: none;
+   margin-top: 24px;
+   color: white;
+   border-radius: 8px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   font-weight: 600;
+   box-shadow: 0 5px 20px rgba(0, 157, 255, 0.4);
+ }
+ .mainText button:hover{
+   background: linear-gradient(135deg, rgb(0, 200, 255), rgb(0, 157, 255));
+   transform: translateY(-3px);
+   box-shadow: 0 8px 30px rgba(0, 157, 255, 0.6);
+ }
+ .head{
+   text-align: center;
+   padding: 80px;
+ }
+ .head h1{
+   font-size: 48px;
+   font-weight: 900;
+   letter-spacing: -1px;
+ }
+ .head span{
+   color: rgb(0, 140, 255);
+   background: linear-gradient(135deg, rgb(0, 128, 255), rgb(0, 200, 255));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+ }
+ .about{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   background: linear-gradient(135deg, rgba(28, 28, 28, 0.8), rgba(40, 40, 40, 0.8));
+   padding: 52px;
+   border-top: 1px solid rgba(0, 128, 255, 0.1);
+   border-bottom: 1px solid rgba(0, 128, 255, 0.1);
+ }
+ .about img{
+   width: 250px;
+   border-radius: 50%;
+   border: 4px solid rgb(0, 136, 255);
+   margin-inline: 65px;
+   box-shadow: 0 15px 40px rgba(0, 136, 255, 0.3);
+   transition: all 0.4s ease;
+ }
+ .about img:hover{
+   transform: scale(1.05) translateY(-5px);
+   box-shadow: 0 20px 50px rgba(0, 136, 255, 0.5);
+ }
+ .aboutText p{
+   margin-top: 22px;
+ }
+ .aboutText h2 span{
+   color: rgb(0, 140, 255);
+ }
+ .aboutText p span{
+   color: rgb(218, 218, 218);
+ }
+ .aboutText h2{
+   font-size: 30px;
+ }
+ .service{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+
+ }
+ .card{
+   width: 250px;
+   padding: 30px 22px;
+   background: linear-gradient(135deg, rgba(34, 34, 34, 0.8), rgba(50, 50, 50, 0.8));
+   margin-inline: 20px;
+   border-radius: 12px;
+   margin-top: 22px;
+   border: 1px solid rgba(0, 128, 255, 0.2);
+   transition: all 0.4s ease;
+   backdrop-filter: blur(10px);
+ }
+ .card:hover{
+   transform: translateY(-8px);
+   border-color: rgba(0, 128, 255, 0.5);
+   box-shadow: 0 20px 40px rgba(0, 128, 255, 0.2);
+   background: linear-gradient(135deg, rgba(40, 40, 40, 0.9), rgba(60, 60, 60, 0.9));
+ }
+ .card p{
+   margin-top: 15px;
+   line-height: 1.6;
+   color: rgba(255, 255, 255, 0.85);
+ }
+ .card i{
+   font-size: 40px;
+   color: rgb(0, 128, 255);
+   transition: all 0.3s ease;
+ }
+ .card:hover i{
+   transform: scale(1.2) rotate(10deg);
+ }
+ .myWork{
+   display: flex;
+   justify-content: flex-start;
+   flex-wrap: nowrap;
+   transition: transform 0.5s ease-in-out;
+ }
+ .carousel-container{
+   position: relative;
+   overflow: hidden;
+   background: linear-gradient(135deg, rgba(17, 16, 16, 0.8), rgba(30, 30, 30, 0.8));
+   border-radius: 10px;
+   margin: 0 50px;
+   border: 1px solid rgba(0, 128, 255, 0.1);
+ }
+ .carousel-btn{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background: linear-gradient(135deg, rgba(0, 128, 255, 0.8), rgba(0, 180, 255, 0.8));
+   color: white;
+   border: none;
+   padding: 12px 15px;
+   font-size: 24px;
+   cursor: pointer;
+   z-index: 10;
+   border-radius: 50%;
+   transition: all 0.3s ease;
+   box-shadow: 0 5px 20px rgba(0, 128, 255, 0.3);
+ }
+ .carousel-btn:hover{
+   background: linear-gradient(135deg, rgb(0, 128, 255), rgb(0, 180, 255));
+   transform: translateY(-50%) scale(1.2);
+   box-shadow: 0 8px 30px rgba(0, 128, 255, 0.5);
+ }
+ .carousel-btn.prev{
+   left: 15px;
+ }
+ .carousel-btn.next{
+   right: 15px;
+ }
+ .carousel-dots{
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+   padding: 20px;
+   background-color: rgb(17, 16, 16);
+ }
+ .dot{
+   width: 12px;
+   height: 12px;
+   border-radius: 50%;
+   background-color: rgba(255, 255, 255, 0.4);
+   cursor: pointer;
+   transition: all 0.3s ease;
+   border: 1px solid rgba(0, 128, 255, 0.3);
+ }
+ .dot.active{
+   background: linear-gradient(135deg, rgb(0, 128, 255), rgb(0, 180, 255));
+   transform: scale(1.4);
+   box-shadow: 0 0 15px rgba(0, 128, 255, 0.6);
+ }
+ .workCard{
+   width: 280px;
+   background: linear-gradient(135deg, rgba(35, 35, 35, 0.9), rgba(50, 50, 50, 0.9));
+   border-radius: 12px;
+   padding: 15px;
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   flex-shrink: 0;
+   margin-right: 20px;
+   border: 1px solid rgba(0, 128, 255, 0.15);
+   transition: all 0.4s ease;
+   backdrop-filter: blur(5px);
+ }
+ .workCard:hover{
+   transform: translateY(-5px);
+   border-color: rgba(0, 128, 255, 0.4);
+   box-shadow: 0 15px 40px rgba(0, 128, 255, 0.15);
+ }
+ .workCard img{
+   width: 100%;
+   height: 320px;
+   object-fit: contain;
+   border-radius: 3px;
+   background-color: rgb(40, 40, 40);
+ }
+ .workCard p{
+   margin-top: 15px;
+   font-size: 16px;
+   flex-grow: 1;
+ }
+ .workCard a{
+   text-decoration: none;
+   display: inline-block;
+   margin-top: 15px;
+   padding: 10px 20px;
+   background: linear-gradient(135deg, rgb(0, 128, 255), rgb(0, 180, 255));
+   color: white;
+   border-radius: 6px;
+   font-weight: 600;
+   transition: all 0.3s ease;
+   text-align: center;
+   min-width: 100px;
+   box-shadow: 0 4px 15px rgba(0, 128, 255, 0.3);
+ }
+ .workCard a:hover{
+   background: linear-gradient(135deg, rgb(0, 180, 255), rgb(0, 128, 255));
+   transform: translateY(-3px);
+   box-shadow: 0 6px 25px rgba(0, 128, 255, 0.5);
+ }
+ .connect{
+   text-align: center;
+   padding: 80px 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+ }
+ .connect .head{
+   width: 100%;
+ }
+ .contact{
+   width: 100%;
+   max-width: 400px;
+   padding: 40px;
+   background: linear-gradient(135deg, rgba(48, 48, 48, 0.9), rgba(65, 65, 65, 0.9));
+   margin: 0 auto;
+   border-radius: 15px;
+   border: 1px solid rgba(0, 128, 255, 0.2);
+   backdrop-filter: blur(10px);
+   box-shadow: 0 8px 32px rgba(0, 128, 255, 0.1);
+ }
+ .contact input{
+   width: 100%;
+   padding: 12px 15px;
+   font-size: 17px;
+   border: 1px solid rgba(0, 128, 255, 0.3);
+   background-color: rgba(255, 255, 255, 0.05);
+   color: white;
+   margin-top: 8px;
+   margin-bottom: 15px;
+   border-radius: 8px;
+   transition: all 0.3s ease;
+   outline: none;
+   box-sizing: border-box;
+ }
+ .contact input:focus{
+   border-color: rgb(0, 128, 255);
+   background-color: rgba(0, 128, 255, 0.1);
+   box-shadow: 0 0 15px rgba(0, 128, 255, 0.2);
+ }
+ .contact p{
+   margin-top: 15px;
+   margin-bottom: 5px;
+   font-weight: 600;
+   color: rgba(255, 255, 255, 0.9);
+   text-align: left;
+ }
+ .contact button{
+   width: 100%;
+   height: 42px;
+   background: linear-gradient(135deg, rgb(0, 128, 255), rgb(0, 180, 255));
+   color: white;
+   font-size: 17px;
+   border: none;
+   margin-top: 25px;
+   border-radius: 8px;
+   font-weight: 600;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   box-shadow: 0 5px 20px rgba(0, 128, 255, 0.3);
+ }
+ .contact button:hover{
+   transform: translateY(-2px);
+   box-shadow: 0 8px 30px rgba(0, 128, 255, 0.5);
+ }
+ .footer{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   padding: 55px;
+   margin-top: 66px;
+   background: linear-gradient(135deg, rgba(52, 51, 51, 0.8), rgba(70, 70, 70, 0.8));
+   border-top: 1px solid rgba(0, 128, 255, 0.1);
+ }
+ .text{
+   margin-top: 20px;
+ }
+ .text h3{
+   color: rgb(0, 128, 255);
+   font-weight: 700;
+   font-size: 18px;
+ }
+ .text p{
+   margin-top: 12px;
+   color: rgba(255, 255, 255, 0.8);
+   transition: all 0.3s ease;
+ }
+ .text p:hover{
+   color: rgb(0, 128, 255);
+   transform: translateX(5px);
+ }
+
+ @media screen and (max-width:1000px){
+   .main{
+      display: block;
+      text-align: center;
+      margin-top: 155px;
+   }
+   .main img{
+      width: 280px;
+      height: 320px;
+      margin-top: 30px;
+   }
+ }
+
+ @media screen and (max-width:800px){
+   ul{
+      display: none;
+   }
+   .showData{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 23px;
+      background-color: rgb(60, 59, 59);
+      gap: 20px;
+      border-radius: 5px;
+      position: fixed;
+      top: 75px;
+      right: 3%;
+   }
+   #bar{
+      display: block;
+      font-size: 25px;
+      cursor: pointer;
+   }
+   .workCard{
+      width: 100%;
+      max-width: 280px;
+      margin-right: 15px;
+   }
+   .workCard img{
+      height: 300px;
+   }
+   .myWork{
+      gap: 20px;
+   }
+   .head{
+      padding: 50px 20px;
+   }
+   .carousel-container{
+      margin: 0 30px;
+   }
+   .carousel-btn{
+      padding: 10px 12px;
+      font-size: 20px;
+   }
+   .contact{
+      width: 90%;
+      max-width: 400px;
+      margin: 0 auto;
+   }
+ }
+ @media screen and (max-width:550px){
+   .mainText h1{
+      font-size: 36px;
+   }
+   .mainText h3{
+      font-size: 21px;
+   }
+   .mainText p{
+      font-size: 20px;
+   }
+   .main img{
+      width: 100%;
+      max-width: 250px;
+      height: 280px;
+   }
+   .contact{
+      width: 90%;
+      max-width: 350px;
+      padding: 30px;
+      margin: 0 auto;
+   }
+   .workCard{
+      width: 100%;
+      max-width: 90vw;
+      padding: 12px;
+      margin-right: 10px;
+   }
+   .workCard img{
+      height: 280px;
+   }
+   .workCard p{
+      font-size: 14px;
+      margin-top: 10px;
+   }
+   .workCard a{
+      padding: 6px 12px;
+      font-size: 14px;
+   }
+   .myWork{
+      gap: 15px;
+      padding: 0 10px;
+   }
+   .head{
+      padding: 40px 20px;
+   }
+   .head h1{
+      font-size: 24px;
+   }
+   .carousel-container{
+      margin: 0 10px;
+   }
+   .carousel-btn{
+      padding: 8px 10px;
+      font-size: 18px;
+   }
+ }
