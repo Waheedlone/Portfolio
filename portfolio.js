@@ -16,7 +16,7 @@ bar.addEventListener("click", function(){
 })
 
 cvBtn.addEventListener("click", function(){
-    alert("Downlode Succesfully")
+    alert("Downloaded Successfully")
 })
 
 submit.addEventListener("click", function(){
